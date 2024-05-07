@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Fonts & Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css" id="styleLinkTag">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="switch-btn-container">
+            <button class="switch-btn" onclick="switchTheme()">
+                theme
+            </button>
+        </div>
+        <div class="screen-container">
+            <p class="calc-display" id="calc-displayJs"></p>
+        </div>
+
+        <div class="buttons-container" id="btnContainerJs">
+            <button class="btn" onclick="appendToDisplay(7)">7</button>
+            <button class="btn" onclick="appendToDisplay(8)">8</button>
+            <button class="btn" onclick="appendToDisplay(9)">9</button>
+            <button class="btn del-btn" onclick="deleteBtn()">DEL</button>
+
+            
+            <button class="btn" onclick="appendToDisplay(4)">4</button>
+            <button class="btn" onclick="appendToDisplay(5)">5</button>
+            <button class="btn" onclick="appendToDisplay(6)">6</button>
+            <button class="btn" onclick="appendToDisplay(' + ')">+</button>
+
+            
+            <button class="btn" onclick="appendToDisplay(1)">1</button>
+            <button class="btn" onclick="appendToDisplay(2)">2</button>
+            <button class="btn" onclick="appendToDisplay(3)">3</button>
+            <button class="btn" onclick="appendToDisplay(' - ')">-</button>
+
+            
+            <button class="btn" onclick="appendToDisplay('.')">.</button>
+            <button class="btn" onclick="appendToDisplay(0)">0</button>
+            <button class="btn" onclick="appendToDisplay(' / ')">/</button>
+            <button class="btn" onclick=" appendToDisplay(' * ')">*</button>
+
+            
+            <button class="btn reset-btn" onclick="resetBtn()">RESET</button>
+            <button class="btn equals-btn" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    <script src="./index.js">
+
+    </script>
+</body>
+</html>
